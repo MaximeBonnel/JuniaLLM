@@ -1,0 +1,4 @@
+langchain
+sentence_transformers
+unstructured
+pip install "unstructured[md]"
