@@ -3,17 +3,16 @@ from langchain_community.embeddings import HuggingFaceEmbeddings
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain.schema import Document
 from langchain.vectorstores.chroma import Chroma
+import os
+import shutil
 
 DATA_PATH = "./documents"
-CHROMA_PATH = "JuniaLLM"
-MODEL_NAME = "openlm-research/open_llama_3b_v2"
+CHROMA_PATH = "ChromaDB"
+EMBEDDINGG_PATH = "./Models/paraphrase-multilingual-MiniLM-L12-v2"
 
-model_kwargs = {'device': 'cpu'}
-encode_kwargs = {'normalize_embeddings': False}
+# Embedding model
 hf = HuggingFaceEmbeddings(
-    model_name=MODEL_NAME,
-    model_kwargs=model_kwargs,
-    encode_kwargs=encode_kwargs
+    model_name=EMBEDDINGG_PATH
 )
 
 def generate_data_store():
@@ -28,10 +27,9 @@ def load_documents():
 
 def split_text(documents):
     text_splitter = RecursiveCharacterTextSplitter(
-        chunk_size=500,
-        chunk_overlap=200,
-        length_function=len,
-        add_start_index=True,
+        chunk_size=300,
+        chunk_overlap=100,
+        length_function=len
     )
     chunks = text_splitter.split_documents(documents)
     print(f"\nSplit {len(documents)} documents into {len(chunks)} chunks.")
@@ -40,6 +38,9 @@ def split_text(documents):
 
 def save_to_chroma(chunks: list[Document]):
     # Clear out the database first.
+    if os.path.exists(CHROMA_PATH):
+        shutil.rmtree(CHROMA_PATH)
+        print(f"Delete {CHROMA_PATH}.")
 
     # Create a new DB from the documents.
     db = Chroma.from_documents(
@@ -49,10 +50,5 @@ def save_to_chroma(chunks: list[Document]):
     # Save the DB to disk.
     db.persist()
     print(f"Saved {len(chunks)} chunks to {CHROMA_PATH}.")
-
-    # Query the DB.
-    query = "Suivre une formation en informatique."
-    print(db.similarity_search(query))
-
 
 generate_data_store()
