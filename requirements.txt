@@ -1,0 +1,7 @@
+langchain
+chromadb
+sentence_transformers
+sentencepiece
+unstructured
+pypdf
+ollama
