@@ -2,4 +2,5 @@ langchain
 sentence_transformers
 sentencepiece
 unstructured
-pip install "unstructured[md]"
+pypdf
+ollama
