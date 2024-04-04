@@ -6,7 +6,7 @@
 2) Install Ollama
     https://ollama.com/download
 3) Install the embedding model
-    Clone "paraphrase-multilingual-MiniLM-L12-v2" from HuggingFace
+    Clone "paraphrase-multilingual-MiniLM-L12-v2" from HuggingFace in "models" folder
     https://huggingface.co/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
     ```git clone https://huggingface.co/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2```
 
