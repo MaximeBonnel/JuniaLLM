@@ -26,7 +26,7 @@ hf = HuggingFaceEmbeddings(
 db = Chroma(persist_directory=CHROMA_PATH, embedding_function=hf)
 
 # Recherche de similarité dans la base de données
-query = "Que font les ISA ?" # Question de l'utilisateur
+query = "Où se trouve le batiment des ISA ?" # Question de l'utilisateur
 context = "" # Contexte de la réponse
 
 results = db.similarity_search(query)
