@@ -13,11 +13,15 @@ Réponds à la question en te basant sur le contexte ci-dessus : {question}"""
 
 # Initialisationn du LLM
 models = ollama.list()
+mistral = False
 for model in models['models']:
     if model['name'] == 'mistral-latest':
-        print('Mistral not found in ollama models')
-        print('Downloading mistral model...')
-        os.system("ollama pull mistral")
+        mistral = True
+
+if not mistral:
+    print('Mistral not found in ollama models')
+    print('Downloading mistral model...')
+    os.system("ollama pull mistral")
 
 # Model pour les embeddings
 hf = HuggingFaceEmbeddings(
