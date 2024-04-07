@@ -33,12 +33,14 @@ def generate_data_store():
 def load_documents(path):
     loader = PyPDFLoader(path)
     documents = loader.load()
+    for document in documents:
+        document.page_content = document.page_content.replace("\n", " ")
     return documents
 
 # Diviser le texte en morceaux
 def split_text(documents):
     text_splitter = RecursiveCharacterTextSplitter(
-        chunk_size=200,
+        chunk_size=300,
         chunk_overlap=100,
         length_function=len
     )

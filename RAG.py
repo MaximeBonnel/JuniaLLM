@@ -35,16 +35,11 @@ db = Chroma(persist_directory=CHROMA_PATH, embedding_function=hf)
 query = "Que faire après le bac dans l'informatique ?" # Question de l'utilisateur
 context = "" # Contexte de la réponse
 
-# !!! Changer pour les questions où il n'y a pas de contexte !!!
-"""
- results = db.similarity_search_with_relevance_scores(query_text, k=3)
-    if len(results) == 0 or results[0][1] < 0.7:
-        print(f"Unable to find matching results.")
-        return
-"""
-results = db.similarity_search(query)
-for r in results:
-    context += r.page_content + "\n"
+result = db.similarity_search_with_score(query)[0]
+if result[1] > 9:
+    context = "Aucun résultat correspondant trouvé"
+else:
+    context = result.page_content
 
 # Génération de réponse
 response = ollama.generate(model='mistral', prompt=PROMPT_TEMPLATE.format(context=context, question=query))
