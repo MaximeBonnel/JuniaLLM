@@ -9,7 +9,7 @@ PROMPT_TEMPLATE = """
 Réponds à la question uniquement en fonction du contexte suivant
 {context}
 ---
-Réponds à la question en te basant sur le contexte ci-dessus : {question}"""
+Réponds à la question en Français en te basant sur le contexte ci-dessus : {question}"""
 
 # Initialisationn du LLM
 models = ollama.list()
@@ -19,7 +19,6 @@ for model in models['models']:
         mistral = True
 
 if not mistral:
-    print('Mistral not found in ollama models')
     print('Downloading mistral model...')
     os.system("ollama pull mistral")
 
@@ -39,7 +38,7 @@ result = db.similarity_search_with_score(query)[0]
 if result[1] > 9:
     context = "Aucun résultat correspondant trouvé"
 else:
-    context = result.page_content
+    context = result[0].page_content
 
 # Génération de réponse
 response = ollama.generate(model='mistral', prompt=PROMPT_TEMPLATE.format(context=context, question=query))
