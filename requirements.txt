@@ -5,3 +5,4 @@ sentencepiece
 unstructured
 pypdf
 ollama
+gradio

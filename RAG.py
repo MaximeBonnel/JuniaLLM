@@ -1,12 +1,13 @@
 from langchain_community.embeddings import HuggingFaceEmbeddings
 from langchain.vectorstores.chroma import Chroma
+import gradio as gr
 import ollama
 import os
 
 CHROMA_PATH = "ChromaDB"
 EMBEDDINGG_PATH = "./Models/paraphrase-multilingual-MiniLM-L12-v2" # Multilangage model qui supporte le français
 PROMPT_TEMPLATE = """
-Réponds à la question uniquement en fonction du contexte suivant
+Contexte :
 {context}
 ---
 Réponds à la question en Français en te basant sur le contexte ci-dessus : {question}"""
@@ -30,16 +31,27 @@ hf = HuggingFaceEmbeddings(
 # Initialisation de la base de données Chroma
 db = Chroma(persist_directory=CHROMA_PATH, embedding_function=hf)
 
-# Recherche de similarité dans la base de données
-query = "Que faire après le bac dans l'informatique ?" # Question de l'utilisateur
-context = "" # Contexte de la réponse
+def RAG(query):
+    # Recherche de similarité dans la base de données
+    context = "" # Contexte de la réponse
 
-result = db.similarity_search_with_score(query)[0]
-if result[1] > 9:
-    context = "Aucun résultat correspondant trouvé"
-else:
-    context = result[0].page_content
+    result = db.similarity_search_with_score(query)[0]
+    if result[1] > 9:
+        context = "Aucun résultat correspondant trouvé"
+    else:
+        context = result[0].page_content
 
-# Génération de réponse
-response = ollama.generate(model='mistral', prompt=PROMPT_TEMPLATE.format(context=context, question=query))
-print(response['response'])
+    # Génération de réponse
+    response = ollama.generate(model='mistral', prompt=PROMPT_TEMPLATE.format(context=context, question=query))
+    return response['response']
+
+
+# Créer une interface Gradio
+gr.Interface(
+    fn=RAG,
+    inputs=gr.Textbox(lines=2, label="Question", placeholder="Quel est votre question ?"),
+    outputs=gr.Textbox(lines=2, label="Réponse"),
+    description="Posez vos questions à JUNIA LLM pour tout savoir sur Junia !",
+    title="Junia LLM",
+    allow_flagging="never"
+).launch()
