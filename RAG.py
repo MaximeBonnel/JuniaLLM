@@ -4,6 +4,7 @@ import gradio as gr
 import ollama
 import os
 
+# Paramètres
 CHROMA_PATH = "ChromaDB"
 EMBEDDINGG_PATH = "./Models/paraphrase-multilingual-MiniLM-L12-v2" # Multilangage model qui supporte le français
 PROMPT_TEMPLATE = """
@@ -29,7 +30,7 @@ hf = HuggingFaceEmbeddings(
 )
 
 # Initialisation de la base de données Chroma
-db = Chroma(persist_directory=CHROMA_PATH, embedding_function=hf)
+db = Chroma(persist_directory=CHROMA_PATH, embedding_function=hf, collection_metadata={"hnsw:space": "cosine"})
 
 def RAG(query):
     # Recherche de similarité dans la base de données
@@ -38,6 +39,7 @@ def RAG(query):
     result = db.similarity_search_with_score(query)[0]
     if result[1] > 9:
         context = "Aucun résultat correspondant trouvé"
+        print(f"Aucune donnée trouvée, similarité : {result[1]}")
     else:
         context = result[0].page_content
 
