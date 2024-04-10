@@ -4,6 +4,10 @@ import gradio as gr
 import ollama
 import os
 
+# TO DO
+# https://github.com/ollama/ollama-python?tab=readme-ov-file#push
+# https://python.langchain.com/docs/guides/productionization/evaluation/string/embedding_distance/#select-embeddings-to-use
+
 # Paramètres
 CHROMA_PATH = "ChromaDB"
 EMBEDDINGG_PATH = "./Models/paraphrase-multilingual-MiniLM-L12-v2" # Multilangage model qui supporte le français
@@ -38,7 +42,7 @@ def RAG(query):
 
     result = db.similarity_search_with_score(query)[0]
     if result[1] > 9:
-        context = "Aucun résultat correspondant trouvé"
+        context = "Il n'y a pas de contexte pour cette question. Tu dois seulement répondre 'Je ne peux pas répondre à cette question'."
         print(f"Aucune donnée trouvée, similarité : {result[1]}")
     else:
         context = result[0].page_content
