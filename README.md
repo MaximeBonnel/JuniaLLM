@@ -1,4 +1,5 @@
 # JuniaLLM
+Works on windows
 
 ## Setup
 1)

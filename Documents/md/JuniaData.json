@@ -621,11 +621,11 @@
     },
     {
         "instruction": "Quelles sont les activités éligibles pour la VES au sein de JUNIA ?",
-        "output": "Les activités suivantes sont éligibles :\n- Postes-clés au sein d’une association (président, trésorier, secrétaire, responsable événement, communication, RSE)\n- Délégué de classe/promotion (sous réserve de missions renforcées)\n- Ambassadeur Junia (présentation de l’école dans les salons, JPO…)\n- Campus manager (représentation des entreprises)\n- Dispositif Aide à la Réussite Junia / tutorat / soutien scolaire\n- Bénévolat conséquent dans une asso externe, scoutisme\n- Proche aidant\n- Sportif/artiste de haut niveau\n- Réserve citoyenne ou militaire\n- Job étudiant régulier et sous contrat\n- Statut National Etudiant Entrepreneur\n- Projet personnel à valider"
+        "output": "Les activités suivantes sont éligibles : - Postes-clés au sein d’une association (président, trésorier, secrétaire, responsable événement, communication, RSE) - Délégué de classe/promotion (sous réserve de missions renforcées) - Ambassadeur Junia (présentation de l’école dans les salons, JPO…) - Campus manager (représentation des entreprises) - Dispositif Aide à la Réussite Junia / tutorat / soutien scolaire - Bénévolat conséquent dans une asso externe, scoutisme - Proche aidant - Sportif/artiste de haut niveau - Réserve citoyenne ou militaire - Job étudiant régulier et sous contrat - Statut National Etudiant Entrepreneur - Projet personnel à valider"
     },
     {
         "instruction": "Comment trouver une VES au sein de JUNIA ?",
-        "output": "Pour trouver une VES (Valorisation de l'Engagement Sociétal), vous pouvez suivre ces différentes démarches :\n- Participer au Forum des Associations Junia, qui regroupe des associations étudiantes internes et des associations partenaires externes.\n- Participer au Forum de Rentrée de la Catho. Ce forum met en avant des associations de solidarité extérieures.\n- Participer aux forums des associations des municipalités.\n- Explorer la plate-forme nationale : www.jeveuxaider.gouv.fr\n- Utiliser votre réseau de connaissances."
+        "output": "Pour trouver une VES (Valorisation de l'Engagement Sociétal), vous pouvez suivre ces différentes démarches : - Participer au Forum des Associations Junia, qui regroupe des associations étudiantes internes et des associations partenaires externes. - Participer au Forum de Rentrée de la Catho. Ce forum met en avant des associations de solidarité extérieures. - Participer aux forums des associations des municipalités. - Explorer la plate-forme nationale : www.jeveuxaider.gouv.fr - Utiliser votre réseau de connaissances."
     },
     {
         "instruction": "Comment valider une VES et quelles sont les étapes à suivre ?",
@@ -633,11 +633,11 @@
     },
     {
         "instruction": "Quelles sont les étapes à suivre une fois retenu pour un poste et pour valider une VES sur Junia-learning?",
-        "output": "Si vous êtes retenu pour un poste et souhaitez valider une VES sur Junia-learning, voici les étapes à suivre :\n1. Postulez pour un poste.\n2. Une fois retenu, déclarez-vous sur Junia-learning.\n3. Selon le type d’engagement, vous pourriez avoir à déposer un document ou à écrire un texte-type.\n4. Un référent académique validera la déclaration ou prendra contact avec vous pour apporter des modifications.\n5. Faites une rencontre avec le référent académique pour faire un point à mi-parcours.\n6. Rassemblez les preuves de votre travail et déposez-les sur Junia-learning, en fonction du type d’engagement.\n7. Le référent académique valide les preuves et la VES. Il prendra contact avec vous dans le cas contraire."
+        "output": "Si vous êtes retenu pour un poste et souhaitez valider une VES sur Junia-learning, voici les étapes à suivre : 1. Postulez pour un poste. 2. Une fois retenu, déclarez-vous sur Junia-learning. 3. Selon le type d’engagement, vous pourriez avoir à déposer un document ou à écrire un texte-type. 4. Un référent académique validera la déclaration ou prendra contact avec vous pour apporter des modifications. 5. Faites une rencontre avec le référent académique pour faire un point à mi-parcours. 6. Rassemblez les preuves de votre travail et déposez-les sur Junia-learning, en fonction du type d’engagement. 7. Le référent académique valide les preuves et la VES. Il prendra contact avec vous dans le cas contraire."
     },
     {
         "instruction": "Quelles sont les conditions pour valider une ves avec un job étudiant ?",
-        "output": "Il est possible de valoriser un job étudiant aux conditions suivantes :\n- Travailler au moins 4 heures par semaine.\n- Travailler pendant l’année universitaire.\n- Fournir un contrat de travail.\n\nUn job réalisé exclusivement pendant les vacances ne peut être pris en compte. De même qu’un job étudiant réalisé avant la 3ème année. Cette activité n’est pas validable pour les élèves sous statut apprenti."
+        "output": "Il est possible de valoriser un job étudiant aux conditions suivantes : - Travailler au moins 4 heures par semaine. - Travailler pendant l’année universitaire. - Fournir un contrat de travail.  Un job réalisé exclusivement pendant les vacances ne peut être pris en compte. De même qu’un job étudiant réalisé avant la 3ème année. Cette activité n’est pas validable pour les élèves sous statut apprenti."
     },
     {
         "instruction": "Combien d'élèves environ sont concernés par la VES chaque année au sein de JUNIA?",
@@ -665,51 +665,51 @@
     },
     {
         "instruction" : "Quels éléments doivent figurer dans la présentation PowerPoint pour une VES?",
-        "output" : "La présentation PowerPoint pour une VES devrait inclure les éléments suivants:\n\n1. **Présentation de l’association:**\n   - Nom de l’association/du groupe\n   - Description, identité graphique, contacts\n   - Organigramme/liste des personnes\n\n2. **Informations sur les étudiants demandant une VES:**\n   - NOM, Prénom, classe des étudiants\n   - Maximum 2 slides par élève\n\n3. **Objectifs de l'association:**\n   - Objectifs globaux du groupe\n   - Objectifs individuels de chacun\n\nAssurez-vous de présenter de manière claire et concise, avec un maximum de deux slides par élève."
+        "output" : "La présentation PowerPoint pour une VES devrait inclure les éléments suivants:  1. **Présentation de l’association:**    - Nom de l’association/du groupe    - Description, identité graphique, contacts    - Organigramme/liste des personnes  2. **Informations sur les étudiants demandant une VES:**    - NOM, Prénom, classe des étudiants    - Maximum 2 slides par élève  3. **Objectifs de l'association:**    - Objectifs globaux du groupe    - Objectifs individuels de chacun  Assurez-vous de présenter de manière claire et concise, avec un maximum de deux slides par élève."
     },
     {
         "instruction" : "Comment organiser la présentation des étudiants demandant une VES?",
-        "output" : "Pour la présentation des étudiants demandant une VES, chaque slide devrait inclure les informations suivantes pour chaque élève:\n\n1. **NOM et Prénom de l'étudiant:**\n   - Classe de l'étudiant\n\n2. **Objectifs individuels de l'étudiant:**\n   - Maximum 2 slides par élève pour présenter ses objectifs\n\nVeillez à structurer la présentation de manière claire et à mettre en évidence les points importants."
+        "output" : "Pour la présentation des étudiants demandant une VES, chaque slide devrait inclure les informations suivantes pour chaque élève:  1. **NOM et Prénom de l'étudiant:**    - Classe de l'étudiant  2. **Objectifs individuels de l'étudiant:**    - Maximum 2 slides par élève pour présenter ses objectifs  Veillez à structurer la présentation de manière claire et à mettre en évidence les points importants."
     },
     {
         "instruction" : "Quels détails doivent être inclus dans la partie 'Présentation de l'association'?",
-        "output" : "Dans la partie 'Présentation de l'association', assurez-vous d'inclure les éléments suivants:\n\n1. **Nom de l’association/du groupe:**\n   - Un nom clair et représentatif\n\n2. **Description/identité graphique/contacts:**\n   - Une brève description de l'association\n   - L'identité graphique (logo, couleur, etc.)\n   - Informations de contact\n\n3. **Organigramme/Liste des personnes:**\n   - Une structure visuelle de l'organisation ou une liste des membres clés."
+        "output" : "Dans la partie 'Présentation de l'association', assurez-vous d'inclure les éléments suivants:  1. **Nom de l’association/du groupe:**    - Un nom clair et représentatif  2. **Description/identité graphique/contacts:**    - Une brève description de l'association    - L'identité graphique (logo, couleur, etc.)    - Informations de contact  3. **Organigramme/Liste des personnes:**    - Une structure visuelle de l'organisation ou une liste des membres clés."
     },
     {
         "instruction" : "Comment déterminer les objectifs de l'année pour une VES?",
-        "output" : "Pour déterminer les objectifs de l'année dans le cadre d'une VES, veuillez suivre ces étapes:\n\n1. **Objectifs de l'association/groupe:**\n   - Identifier les buts principaux de l'association ou du groupe\n   - En lien avec la mission générale de susciter l'attrait des étudiants et/ou des extérieurs\n   - Considérer le rayonnement, la communication, la qualité, la sécurité, et la responsabilité sociale (RSE)\n\n2. **Objectifs individuels dérivés:**\n   - Pour chaque membre, définir des objectifs spécifiques en relation avec les objectifs généraux\n   - Assurer que les objectifs individuels contribuent à l'atteinte des objectifs globaux."
+        "output" : "Pour déterminer les objectifs de l'année dans le cadre d'une VES, veuillez suivre ces étapes:  1. **Objectifs de l'association/groupe:**    - Identifier les buts principaux de l'association ou du groupe    - En lien avec la mission générale de susciter l'attrait des étudiants et/ou des extérieurs    - Considérer le rayonnement, la communication, la qualité, la sécurité, et la responsabilité sociale (RSE)  2. **Objectifs individuels dérivés:**    - Pour chaque membre, définir des objectifs spécifiques en relation avec les objectifs généraux    - Assurer que les objectifs individuels contribuent à l'atteinte des objectifs globaux."
     },
     {
         "instruction" : "Quels points doivent être inclus dans le document sur les objectifs de la VES?",
-        "output" : "Le document sur les objectifs de la VES devrait spécifier:\n\n1. **Objectifs de l'association/groupe:**\n   - Une liste claire des buts principaux en relation avec la mission générale\n   - Mettre en avant la proposition d'événements pour susciter l'attrait des étudiants et/ou des extérieurs\n   - Considérer le rayonnement, la communication, la qualité, la sécurité, et la responsabilité sociale (RSE)\n\n2. **Objectifs individuels:**\n   - Pour chaque membre, détailler les objectifs individuels en lien avec les objectifs généraux\n   - Assurer que les objectifs individuels contribuent à la réalisation des objectifs collectifs."
+        "output" : "Le document sur les objectifs de la VES devrait spécifier:  1. **Objectifs de l'association/groupe:**    - Une liste claire des buts principaux en relation avec la mission générale    - Mettre en avant la proposition d'événements pour susciter l'attrait des étudiants et/ou des extérieurs    - Considérer le rayonnement, la communication, la qualité, la sécurité, et la responsabilité sociale (RSE)  2. **Objectifs individuels:**    - Pour chaque membre, détailler les objectifs individuels en lien avec les objectifs généraux    - Assurer que les objectifs individuels contribuent à la réalisation des objectifs collectifs."
     },
     {
         "instruction" : "Comment aligner les objectifs individuels avec la mission générale de la VES?",
-        "output" : "Pour aligner les objectifs individuels avec la mission générale de la VES, chaque membre devrait:\n\n1. **Comprendre la mission générale:**\n   - Avoir une compréhension claire de la mission de susciter l'attrait des étudiants et/ou des extérieurs\n   - Intégrer les aspects de rayonnement, communication, qualité, sécurité, et RSE\n\n2. **Définir des objectifs personnels en conséquence:**\n   - Élaborer des objectifs individuels qui contribuent à la réalisation des objectifs généraux de l'association\n   - Assurer une cohérence entre les objectifs individuels et la mission globale."
+        "output" : "Pour aligner les objectifs individuels avec la mission générale de la VES, chaque membre devrait:  1. **Comprendre la mission générale:**    - Avoir une compréhension claire de la mission de susciter l'attrait des étudiants et/ou des extérieurs    - Intégrer les aspects de rayonnement, communication, qualité, sécurité, et RSE  2. **Définir des objectifs personnels en conséquence:**    - Élaborer des objectifs individuels qui contribuent à la réalisation des objectifs généraux de l'association    - Assurer une cohérence entre les objectifs individuels et la mission globale."
     },
     {
         "instruction" : "Comment imprimer un document ?",
-        "output" : "Vous pouvez imprimer un document grâce au site : print.junia.social lorsque vous êtes connecté à un reéseau Junia."
+        "output" : "Vous pouvez imprimer un document grâce au site : print.junia.social lorsque vous êtes connecté à un réseau Junia."
     },
     {
         "instruction" : "Imprimer un document à l'ISEN",
-        "output" : "Vous pouvez imprimer un document grâce au site : print.junia.social lorsque vous êtes connecté à un reéseau Junia."
+        "output" : "Vous pouvez imprimer un document grâce au site : print.junia.social lorsque vous êtes connecté à un réseau Junia."
     },
     {
         "instruction" : "Comment imprimer mon CV à l'école ?",
-        "output" : "Vous pouvez imprimer un document grâce au site : print.junia.social lorsque vous êtes connecté à un reéseau Junia."
+        "output" : "Vous pouvez imprimer un document grâce au site : print.junia.social lorsque vous êtes connecté à un réseau Junia."
     },
     {
         "instruction" : "Comment fonctionne les imprimantes ?",
-        "output" : "Vous pouvez imprimer un document grâce au site : print.junia.social lorsque vous êtes connecté à un reéseau Junia."
+        "output" : "Vous pouvez imprimer un document grâce au site : print.junia.social lorsque vous êtes connecté à un réseau Junia."
     },
     {
         "instruction" : "Comment faire pour imprimer un document à HEI ?",
-        "output" : "Vous pouvez imprimer un document grâce au site : print.junia.social lorsque vous êtes connecté à un reéseau Junia."
+        "output" : "Vous pouvez imprimer un document grâce au site : print.junia.social lorsque vous êtes connecté à un réseau Junia."
     },
     {
         "instruction" : "Comment faire pour imprimer un document à l'ISA ?",
-        "output" : "Vous pouvez imprimer un document grâce au site : print.junia.social lorsque vous êtes connecté à un reéseau Junia."
+        "output" : "Vous pouvez imprimer un document grâce au site : print.junia.social lorsque vous êtes connecté à un réseau Junia."
     },
     {
         "instruction" : "Qu'est ce que le Forum Entreprise ?",
@@ -733,7 +733,7 @@
     },
     {
         "instruction" : "Donne moi des conseils pour le forum des entreprises",
-        "output" : "Voici quelques conseils pour le forum des entreprises:\n\n1. **Tenue vestimentaire:**\n   - Venez bien habillé(e) pour donner une bonne impression aux recruteurs.\n\n2. **CVs:**\n   - Ramenez plusieurs copies de votre CV pour les distribuer aux recruteurs.\n\n3. **Stylo:**\n   - Prenez de quoi écrire pour prendre des notes pendant les conversations.\n\n4. **Pitch personnel:**\n   - Préparez votre pitch personnel pour vous présenter de manière concise et impactante aux recruteurs."
+        "output" : "Voici quelques conseils pour le forum des entreprises:  1. **Tenue vestimentaire:**    - Venez bien habillé(e) pour donner une bonne impression aux recruteurs.  2. **CVs:**    - Ramenez plusieurs copies de votre CV pour les distribuer aux recruteurs.  3. **Stylo:**    - Prenez de quoi écrire pour prendre des notes pendant les conversations.  4. **Pitch personnel:**    - Préparez votre pitch personnel pour vous présenter de manière concise et impactante aux recruteurs."
     },
     {
         "instruction" : "Qu'est-ce qui est recommandé en termes de tenue vestimentaire pour le forum des entreprises?",
@@ -785,7 +785,7 @@
     },
     {
         "instruction" : "Quels sont les types de contrats possibles pour le stage de professionnalisation?",
-        "output" : "Deux types de contrats sont possibles pour le stage de professionnalisation :\n\n1. Conventionné : JUNIA ou l'Entreprise établit une convention de stage.\n2. Non conventionné : Un contrat de travail (CDD ou CDI) doit être établi entre l'Étudiant et l'Entreprise."
+        "output" : "Deux types de contrats sont possibles pour le stage de professionnalisation :  1. Conventionné : JUNIA ou l'Entreprise établit une convention de stage. 2. Non conventionné : Un contrat de travail (CDD ou CDI) doit être établi entre l'Étudiant et l'Entreprise."
     },
     {
         "instruction" : "Où peut être réalisé le stage de professionnalisation?",
@@ -793,15 +793,15 @@
     },
     {
         "instruction" : "Quelles sont les exigences de la Cti concernant les stages de M1 et M2?",
-        "output" : "Selon les exigences de la Cti, si le stage de M1 est effectué en laboratoire, le stage de M2 doit impérativement être réalisé en entreprise.\nInversement, si le stage de M2 est prévu en laboratoire, le stage de M1 doit impérativement être réalisé en entreprise pour une durée minimale de 14 semaines."
+        "output" : "Selon les exigences de la Cti, si le stage de M1 est effectué en laboratoire, le stage de M2 doit impérativement être réalisé en entreprise. Inversement, si le stage de M2 est prévu en laboratoire, le stage de M1 doit impérativement être réalisé en entreprise pour une durée minimale de 14 semaines."
     },
     {
         "instruction" : "Est ce que je peux faire mon stage de M1 et M2 en laboratoire ?",
-        "output" : "Selon les exigences de la Cti, si le stage de M1 est effectué en laboratoire, le stage de M2 doit impérativement être réalisé en entreprise.\nInversement, si le stage de M2 est prévu en laboratoire, le stage de M1 doit impérativement être réalisé en entreprise pour une durée minimale de 14 semaines."
+        "output" : "Selon les exigences de la Cti, si le stage de M1 est effectué en laboratoire, le stage de M2 doit impérativement être réalisé en entreprise. Inversement, si le stage de M2 est prévu en laboratoire, le stage de M1 doit impérativement être réalisé en entreprise pour une durée minimale de 14 semaines."
     },
     {
         "instruction" : "Est-il possible de faire un stage de professionnalisation en laboratoire ?",
-        "output" : "Selon les exigences de la Cti, si le stage de M1 est effectué en laboratoire, le stage de M2 doit impérativement être réalisé en entreprise.\nInversement, si le stage de M2 est prévu en laboratoire, le stage de M1 doit impérativement être réalisé en entreprise pour une durée minimale de 14 semaines."
+        "output" : "Selon les exigences de la Cti, si le stage de M1 est effectué en laboratoire, le stage de M2 doit impérativement être réalisé en entreprise. Inversement, si le stage de M2 est prévu en laboratoire, le stage de M1 doit impérativement être réalisé en entreprise pour une durée minimale de 14 semaines."
     },
     {
         "instruction" : "Puis-je faire mon stage de M2 en laboratoire ?",
@@ -821,7 +821,7 @@
     },
     {
         "instruction" : "Quelles sont les étapes à suivre si un accident survient pendant le stage?",
-        "output" : "En cas d'accident pendant la durée du stage, l'Étudiant doit:\n\n1. Prévenir JUNIA et l'Entreprise.\n2. Remplir une déclaration d'accident à l'Entreprise."
+        "output" : "En cas d'accident pendant la durée du stage, l'Étudiant doit: 1. Prévenir JUNIA et l'Entreprise. 2. Remplir une déclaration d'accident à l'Entreprise."
     },
     {
         "instruction" : "À qui l'Étudiant doit-il signaler un accident pendant le stage?",
@@ -1089,7 +1089,7 @@
     },
     {
         "instruction": "Comment activer ma carte ISIC France dématérialisée ?",
-        "output": "Pour activer sa carte ISIC France dématérialisée, vous avez dû recevoir un email de bienvenue de la part de : newsletter@email.isic.fr.\nNB : Cet email peut être dans vos spams."
+        "output": "Pour activer sa carte ISIC France dématérialisée, vous avez dû recevoir un email de bienvenue de la part de : newsletter@email.isic.fr. NB : Cet email peut être dans vos spams."
     },
     {
         "instruction": "Comment avoir ma carte étudiante sur mon téléphone ?",
@@ -1097,7 +1097,7 @@
     },
     {
         "instruction": "Comment renouveler sa carte étudiant ?",
-        "output": "Pour renouveler votre carte étudiant ISIC, vous recevez un mail en debut d'année de la part de newsletter@email.isic.fr pour pouvoir la renouveler.\nNB : Cet email peut tomber dans les spams"
+        "output": "Pour renouveler votre carte étudiant ISIC, vous recevez un mail en debut d'année de la part de newsletter@email.isic.fr pour pouvoir la renouveler. NB : Cet email peut tomber dans les spams"
     },
     {
         "instruction": "Qu'est ce que la carte ISIC ?",
@@ -1293,23 +1293,23 @@
     },
     {
         "instruction": "Quels sont les restaurants du all ?",
-        "output": "Il y a quatre restaurants du All :\n- Le Tradi et le Globe-Trotter, situés au 125 rue Meurein\n- Le Green au 127 rue Meurein\n- Le Food Corner au 47 boulevard Vauban."
+        "output": "Il y a quatre restaurants du All : - Le Tradi et le Globe-Trotter, situés au 125 rue Meurein - Le Green au 127 rue Meurein - Le Food Corner au 47 boulevard Vauban."
     },
     {
         "instruction": "Ou manger ?",
-        "output": "Vous pouvez manger aux restaurants universitaires :\n- Le Tradi et le Globe-Trotter, situés au 125 rue Meurein\n- Le Green au 127 rue Meurein\n- Le Food Corner au 47 boulevard Vauban\n- Les sandwicheries : 125 rue Meurein et 60 boulevard Vauban."
+        "output": "Vous pouvez manger aux restaurants universitaires : - Le Tradi et le Globe-Trotter, situés au 125 rue Meurein - Le Green au 127 rue Meurein - Le Food Corner au 47 boulevard Vauban - Les sandwicheries : 125 rue Meurein et 60 boulevard Vauban."
     },
     {
         "instruction": "Quels sont les RU ?",
-        "output": "Vous pouvez manger aux restaurants universitaires :\n- Le Tradi et le Globe-Trotter, situés au 125 rue Meurein\n- Le Green au 127 rue Meurein\n- Le Food Corner au 47 boulevard Vauban\n- Les sandwicheries : 125 rue Meurein et 60 boulevard Vauban."
+        "output": "Vous pouvez manger aux restaurants universitaires : - Le Tradi et le Globe-Trotter, situés au 125 rue Meurein - Le Green au 127 rue Meurein - Le Food Corner au 47 boulevard Vauban - Les sandwicheries : 125 rue Meurein et 60 boulevard Vauban."
     },
     {
         "instruction": "Donne moi une liste des RU",
-        "output": "Vous pouvez manger aux restaurants universitaires :\n- Le Tradi et le Globe-Trotter, situés au 125 rue Meurein\n- Le Green au 127 rue Meurein\n- Le Food Corner au 47 boulevard Vauban\n- Les sandwicheries : 125 rue Meurein et 60 boulevard Vauban."
+        "output": "Vous pouvez manger aux restaurants universitaires : - Le Tradi et le Globe-Trotter, situés au 125 rue Meurein - Le Green au 127 rue Meurein - Le Food Corner au 47 boulevard Vauban - Les sandwicheries : 125 rue Meurein et 60 boulevard Vauban."
     },
     {
         "instruction": "Ou se trouvent les restaurants universitaires ?",
-        "output": "Vous pouvez manger aux restaurants universitaires :\n- Le Tradi et le Globe-Trotter, situés au 125 rue Meurein\n- Le Green au 127 rue Meurein\n- Le Food Corner au 47 boulevard Vauban\n- Les sandwicheries : 125 rue Meurein et 60 boulevard Vauban."
+        "output": "Vous pouvez manger aux restaurants universitaires : - Le Tradi et le Globe-Trotter, situés au 125 rue Meurein - Le Green au 127 rue Meurein - Le Food Corner au 47 boulevard Vauban - Les sandwicheries : 125 rue Meurein et 60 boulevard Vauban."
     },
     {
         "instruction": "Quel est le prix du RU ?",

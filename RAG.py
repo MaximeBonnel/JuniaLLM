@@ -4,29 +4,26 @@ import gradio as gr
 import ollama
 import os
 
-# TO DO
-# https://github.com/ollama/ollama-python?tab=readme-ov-file#push
-# https://python.langchain.com/docs/guides/productionization/evaluation/string/embedding_distance/#select-embeddings-to-use
-
 # Paramètres
 CHROMA_PATH = "ChromaDB"
 EMBEDDINGG_PATH = "./Models/paraphrase-multilingual-MiniLM-L12-v2" # Multilangage model qui supporte le français
+OLLAMAMODEL = "JuniaMistral" # Mistral sur ollama
 PROMPT_TEMPLATE = """
-Contexte :
+Répondez à la question en vous basant uniquement sur le contexte suivant :
+
 {context}
+
 ---
-Réponds à la question en Français en te basant sur le contexte ci-dessus : {question}"""
+
+Répondez à la question en vous basant sur le contexte ci-dessus : {question}
+"""
 
 # Initialisationn du LLM
-models = ollama.list()
-mistral = False
-for model in models['models']:
-    if model['name'] == 'mistral-latest':
-        mistral = True
-
-if not mistral:
-    print('Downloading mistral model...')
-    os.system("ollama pull mistral")
+os.system("ollama pull mistral")
+os.system("ollama create JuniaMistral -f ./Modelfile")
+os.system("cls")
+print("Adresse IP de la machine :")
+os.system("ipconfig | findstr IPv4") # Afficher l'adresse IP de la machine
 
 # Model pour les embeddings
 hf = HuggingFaceEmbeddings(
@@ -34,21 +31,19 @@ hf = HuggingFaceEmbeddings(
 )
 
 # Initialisation de la base de données Chroma
-db = Chroma(persist_directory=CHROMA_PATH, embedding_function=hf, collection_metadata={"hnsw:space": "cosine"})
+db = Chroma(persist_directory=CHROMA_PATH, embedding_function=hf, collection_metadata={"hnsw:space": "l2"})
 
 def RAG(query):
     # Recherche de similarité dans la base de données
     context = "" # Contexte de la réponse
 
-    result = db.similarity_search_with_score(query)[0]
-    if result[1] > 9:
-        context = "Il n'y a pas de contexte pour cette question. Tu dois seulement répondre 'Je ne peux pas répondre à cette question'."
-        print(f"Aucune donnée trouvée, similarité : {result[1]}")
-    else:
-        context = result[0].page_content
+    results = db.similarity_search_with_score(query)
+    for result in results:
+        context += result[0].page_content + "\n"
+    print(context)
 
     # Génération de réponse
-    response = ollama.generate(model='mistral', prompt=PROMPT_TEMPLATE.format(context=context, question=query))
+    response = ollama.generate(model=OLLAMAMODEL, prompt=PROMPT_TEMPLATE.format(context=context, question=query))
     return response['response']
 
 
@@ -60,4 +55,4 @@ gr.Interface(
     description="Posez vos questions à JUNIA LLM pour tout savoir sur Junia !",
     title="Junia LLM",
     allow_flagging="never"
-).launch()
+).launch(share=False, server_name="0.0.0.0", server_port=8080)

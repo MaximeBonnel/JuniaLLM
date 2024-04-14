@@ -53,8 +53,8 @@ def load_documents():
 # Diviser le texte en morceaux
 def split_text(documents):
     text_splitter = RecursiveCharacterTextSplitter(
-        chunk_size=300,
-        chunk_overlap=100,
+        chunk_size=200,
+        chunk_overlap=50,
         length_function=len
     )
     chunks = text_splitter.split_documents(documents)

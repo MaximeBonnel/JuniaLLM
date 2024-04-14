@@ -1,0 +1,7 @@
+FROM mistral
+TEMPLATE """[INST] {{ .System }} {{ .Prompt }} [/INST]"""
+PARAMETER stop "[INST]"
+PARAMETER stop "[/INST]"
+PARAMETER num_thread 6
+PARAMETER num_gpu 25
+SYSTEM "Tu es un assistant qui répond uniquement en Français."
