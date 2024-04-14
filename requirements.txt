@@ -6,3 +6,4 @@ unstructured
 pypdf
 ollama
 gradio
+pymongo

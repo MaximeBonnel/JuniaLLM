@@ -1,8 +1,12 @@
 from langchain_community.embeddings import HuggingFaceEmbeddings
 from langchain.vectorstores.chroma import Chroma
+from pymongo import MongoClient
 import gradio as gr
 import ollama
 import os
+
+# MongoDB clé secrète de connexion
+import MongoKey
 
 # Paramètres
 CHROMA_PATH = "ChromaDB"
@@ -17,6 +21,11 @@ Répondez à la question en vous basant uniquement sur le contexte suivant :
 
 Répondez à la question en vous basant sur le contexte ci-dessus : {question}
 """
+
+# Connexion à la base de données
+client = MongoClient(MongoKey.KEY)
+db = client["JuniaLLM"]
+collection = db["RAG"]
 
 # Initialisationn du LLM
 os.system("ollama pull mistral")
@@ -44,6 +53,11 @@ def RAG(query):
 
     # Génération de réponse
     response = ollama.generate(model=OLLAMAMODEL, prompt=PROMPT_TEMPLATE.format(context=context, question=query))
+
+    # Ajout de la question et de la réponse dans la base de données
+    doc = {"instruction": query, "output": response['response']}
+    collection.insert_one(doc)
+
     return response['response']
 
 
