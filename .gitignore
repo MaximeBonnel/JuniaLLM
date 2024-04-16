@@ -1,3 +1,4 @@
 Models/paraphrase-multilingual-MiniLM-L12-v2/
 ChromaDB
 MongoKey.py
+__pycache__
