@@ -29,7 +29,7 @@ collection = db["RAG"]
 
 # Initialisationn du LLM
 os.system("ollama pull mistral")
-os.system("ollama create JuniaMistral -f ./Modelfile")
+os.system("ollama create JuniaMistral -f .\Modelfile")
 os.system("cls")
 print("Adresse IP de la machine :")
 os.system("ipconfig | findstr IPv4") # Afficher l'adresse IP de la machine
