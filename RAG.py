@@ -29,7 +29,7 @@ collection = db["RAG"]
 
 # Initialisationn du LLM
 os.system("ollama pull mistral")
-os.system("ollama create JuniaMistral -f ./Modelfile")
+os.system("ollama create JuniaMistral -f .\Modelfile")
 os.system("cls")
 print("Adresse IP de la machine :")
 os.system("ipconfig | findstr IPv4") # Afficher l'adresse IP de la machine
@@ -47,6 +47,7 @@ def RAG(query):
     context = "" # Contexte de la réponse
 
     results = db.similarity_search_with_score(query)
+    # TO DO: Ajouter un système de seuil pour les résultats
     for result in results:
         context += result[0].page_content + "\n"
     print(context)

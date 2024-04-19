@@ -10,7 +10,7 @@ Works on windows
     Clone "paraphrase-multilingual-MiniLM-L12-v2" from HuggingFace in "models" folder
     https://huggingface.co/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
     ```git clone https://huggingface.co/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2```
-
+4) Download MongoKey.py
 ---
 
 ## Run
